@@ -61,7 +61,7 @@ const EncryptMessage = async (req, res) => {
 
 router.post('/login', Login);
 router.post('/signup', SignUp);
-router.post('/encryptmessage', EncryptMessage)
+router.post('/encryptmessage',Token,EncryptMessage)
 
 
 module.exports = router;
